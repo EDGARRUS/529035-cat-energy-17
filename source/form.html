@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+  </head>
+  <body>
+
+    <header class="top">
+      <a class="top__logo logo" href="/">
+        <img class="logo__img" src="http://placehold.it/33x38">
+        <div class="logo__description">CAT ENERGY</div>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--active"><a class="menu-list__link" href="/">Главная</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="menu-list__item"><a class="menu-list__link">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="choice">
+        <div class="choice__wrapper">
+          <h1 class="title">Подбор продукции</h1>
+          <p class="choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <form class="choice__form question">
+            <div class="question__about cat-info">
+              <label class="cat-info__label">Имя:*</label><input class="cat-info__input-text" placeholder="Барсик"
+                                                                 type="text">
+              <label class="cat-info__label">Вес (кг):*</label><input class="cat-info__input-text" placeholder="7"
+                                                                      type="text">
+              <label class="cat-info__label">Возраст (лет):*</label><input class="cat-info__input-text" placeholder="7"
+                                                                           type="text">
+            </div>
+
+            <div class="question__goals goals">
+              <input checked class="goals__item goals__item--circle" name="goal" type="radio" value="Похудение"><label
+              class="goals__label">Похудение</label>
+              <input class="goals__item goals__item--circle" name="goal" type="radio" value="Набор массы"><label
+              class="goals_label">Набор
+              массы</label>
+              <input class="goals__item goals__item--circle" name="goal" type="radio" value="Не знаю"><label
+              class="goals__label">Не знаю
+              (нужен ваш совет)</label>
+            </div>
+
+            <h2 class="title-divider">Контактные данные (владельца кота)</h2>
+            <div class="choice__buyer buyer">
+              <label class="buyer__label">E-mail:*</label><input class="buyer__input-text buyer__input-text--email"
+                                                                 placeholder="kuklachev@gmail.com"
+                                                                 type="text">
+              <label class="buyer__label">Телефон:*</label><input class="buyer__input-text buyer__input-text--phone"
+                                                                  placeholder="8 (960) 900-60-90"
+                                                                  type="text">
+            </div>
+
+            <h2 class="title-divider">Комментарий</h2>
+            <textarea class="choice__message" cols="35" placeholder="Расскажите обо всех повадках кота"
+                      rows="10"></textarea>
+
+            <h2 class="title-divider">Дополнительно</h2>
+            <div class="question__goals goals">
+              <input checked class="goals__item goals__item--square" name="sugar" type="radio" value="Сахорозаменитель"><label>Сахарозаменитель</label>
+              <input class="goals__item goals__item--square" name="water" type="radio" value="Питьевая вода"><label>Питьевая
+              вода</label>
+              <input class="goals__item goals__item--square" name="milk" type="radio"
+                     value="Молоко"><label>Молоко</label>
+              <input class="goals__item goals__item--square" name="vitamin" type="radio" value="Витамины"><label>Витамины</label>
+            </div>
+
+            <button class="btn question__btn" type="submit">Отправить заявку</button>
+            <p class="question__necessary">* — Обязательные поля</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact contact--grey">
+        <div class="contact__wrapper">
+          <p class="contact__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contact__map"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bottom">
+      <div class="bottom__wrapper">
+        <a class="bottom__description" href="/">CAT ENERGY</a>
+        <div class="bottom__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social-link--vk" href="#"></a></li>
+            <li class="social__item"><a class="social__link social-link--inst" href="#"></a></li>
+            <li class="social__item"><a class="social__link social-link--fb" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="bottom__copyright copyright">
+          <a class="copyright__description" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__logo" href="#"><img class="copyright__logo-img" src="http://placehold.it/27x34"></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
