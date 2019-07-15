@@ -34,49 +34,55 @@
     <main class="page-content">
       <section class="choice">
         <div class="choice__wrapper">
-          <h1 class="title">Подбор продукции</h1>
+          <h1 class="title">Подбор программы</h1>
           <p class="choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="choice__form question">
 
             <!-- Первый блок вопросов -->
-            <div class="question__about cat-info">
-              <label class="cat-info__label" for="name">Имя:*</label><input class="cat-info__input-text" id="name"
-                                                                            placeholder="Барсик"
-                                                                            required type="text">
-              <label class="cat-info__label" for="weight">Вес (кг):*</label><input class="cat-info__input-text"
-                                                                                   id="weight"
-                                                                                   placeholder="7"
-                                                                                   required type="text">
-              <label class="cat-info__label" for="age">Возраст (лет):*</label><input class="cat-info__input-text"
-                                                                                     id="age"
-                                                                                     placeholder="7"
-                                                                                     required type="text">
-            </div>
+            <fieldset class="question__about cat-info">
+              <div class="input-wrapper"><label class="cat-info__label" for="name">Имя:*</label><input
+                class="cat-info__input-text" id="name"
+                placeholder="Барсик"
+                required type="text"></div>
+              <div class="input-wrapper"><label class="cat-info__label" for="weight">Вес (кг):*</label><input
+                class="cat-info__input-text"
+                id="weight"
+                placeholder="7"
+                required type="text"></div>
+              <div class="input-wrapper"><label class="cat-info__label" for="age">Возраст (лет):*</label><input
+                class="cat-info__input-text"
+                id="age"
+                placeholder="7"
+                required type="text"></div>
+            </fieldset>
 
             <!-- Второй блок вопросов -->
-            <div class="question__goals goals">
-              <input checked class="goals__item goals__item--circle" id="less" name="goal" type="radio"
-                     value="Похудение"><label
-              class="goals__label" for="less">Похудение</label>
-              <input class="goals__item goals__item--circle" id="more" name="goal" type="radio"
-                     value="Набор массы"><label
-              class="goals_label" for="more">Набор массы</label>
-              <input class="goals__item goals__item--circle" id="hint" name="goal" type="radio" value="Не знаю"><label
-              class="goals__label" for="hint">Не знаю (нужен ваш совет)</label>
-            </div>
+            <fieldset class="question__goals goals">
+              <div class="radio-wrapper"><input checked class="goals__item goals__item--circle" id="less" name="goal"
+                                                type="radio"
+                                                value="Похудение"><label
+                class="goals__label" for="less">Похудение</label></div>
+              <div class="radio-wrapper"><input class="goals__item goals__item--circle" id="more" name="goal"
+                                                type="radio"
+                                                value="Набор массы"><label
+                class="goals_label" for="more">Набор массы</label></div>
+              <div class="radio-wrapper"><input class="goals__item goals__item--circle" id="hint" name="goal"
+                                                type="radio" value="Не знаю"><label
+                class="goals__label" for="hint">Не знаю (нужен ваш совет)</label></div>
+            </fieldset>
 
             <!-- Третий блок вопросов -->
             <h2 class="title-divider">Контактные данные (владельца кота)</h2>
-            <div class="choice__buyer buyer">
-              <label class="buyer__label" for="email">E-mail:*</label><input
-              class="buyer__input-text buyer__input-text--email"
-              id="email"
-              placeholder="kuklachev@gmail.com" required type="email">
-              <label class="buyer__label" for="tel">Телефон:*</label><input
-              class="buyer__input-text buyer__input-text--phone"
-              id="tel"
-              placeholder="8 (960) 900-60-90" required type="tel">
-            </div>
+            <fieldset class="choice__buyer buyer">
+              <div class="input-wrapper"><label class="buyer__label" for="email">E-mail:*</label><input
+                class="buyer__input-text buyer__input-text--email"
+                id="email"
+                placeholder="kuklachev@gmail.com" required type="email"></div>
+              <div class="input-wrapper"><label class="buyer__label" for="tel">Телефон:*</label><input
+                class="buyer__input-text buyer__input-text--phone"
+                id="tel"
+                placeholder="8 (960) 900-60-90" required type="tel"></div>
+            </fieldset>
 
             <!-- Четвертный блок вопросов -->
             <h2 class="title-divider">Комментарий</h2>
@@ -84,16 +90,23 @@
                       rows="10"></textarea>
 
             <h2 class="title-divider">Дополнительно</h2>
-            <div class="question__goals goals">
-              <input checked class="goals__item goals__item--square" id="sugar" name="sugar" type="radio"
-                     value="Сахорозаменитель"><label class="goals__label" for="sugar">Сахарозаменитель</label>
-              <input class="goals__item goals__item--square" id="water" name="water" type="radio" value="Питьевая вода"><label
-              class="goals__label" for="water">Питьевая вода</label>
-              <input class="goals__item goals__item--square" id="milk" name="milk" type="radio"
-                     value="Молоко"><label class="goals__label" for="milk">Молоко</label>
-              <input class="goals__item goals__item--square" id="vitamin" name="vitamin" type="radio"
-                     value="Витамины"><label class="goals__label" for="vitamin">Витамины</label>
-            </div>
+            <fieldset class="question__goals goals">
+              <div class="radio-wrapper"><input checked class="goals__item goals__item--square" id="sugar" name="sugar"
+                                                type="radio"
+                                                value="Сахорозаменитель"><label class="goals__label" for="sugar">Сахарозаменитель</label>
+              </div>
+              <div class="radio-wrapper"><input class="goals__item goals__item--square" id="water" name="water"
+                                                type="radio" value="Питьевая вода"><label
+                class="goals__label" for="water">Питьевая вода</label></div>
+              <div class="radio-wrapper"><input class="goals__item goals__item--square" id="milk" name="milk"
+                                                type="radio"
+                                                value="Молоко"><label class="goals__label" for="milk">Молоко</label>
+              </div>
+              <div class="radio-wrapper"><input class="goals__item goals__item--square" id="vitamin" name="vitamin"
+                                                type="radio"
+                                                value="Витамины"><label class="goals__label"
+                                                                        for="vitamin">Витамины</label></div>
+            </fieldset>
 
             <!-- Подвал формы -->
             <button class="btn question__btn" type="submit">Отправить заявку</button>
@@ -106,8 +119,8 @@
         <div class="contact__wrapper">
           <p class="contact__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <div class="contact__map"></div>
         </div>
+        <div class="contact__map"></div>
       </section>
 
     </main>
