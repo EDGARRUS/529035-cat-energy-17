@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+$font_promo: "Oswald", "Arial", sans-serif;
+
+$font_standard: "Arial", "Tahoma", sans-serif;
+
+$color_empty: white;
+
+$green_light: #68b738;
+
+$green_dark: #5eaa2f;
+
+$grey_light: #f2f2f2;
+
+$grey_medium: #ebebeb;
+
+$grey_dark: #444444;
+
+$black: #111111;
+
+$red_light: #ff8282;
+
+$opacity_medium: 60%;
+
+$opacity_light: 30%;
+
+$wrapper_mobile: 280px;
+
+@mixin ul_reset {
+  list-style: none;
+  padding-left: 0;
+}
+
+.btn {
+  background-color: $green_light;
+  font-size: 14px;
+  font-family: $font_promo;
+  color: $color_empty;
+  text-transform: uppercase;
+  line-height: 1.286;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+
+  &--grey {
+    background-color: $grey_light;
+    color: $grey_dark;
+  }
+}
+
+.title {
+  font-size: 36px;
+  font-family: $font_promo;
+  color: $black;
+  line-height: 1.667;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.title-divider {
+  font-size: 24px;
+  font-family: $font_promo;
+  color: $black;
+  line-height: 1;
+  text-align: left;
+  position: relative;
+
+  &::after {
+    background-color: $green_light;
+    height: 3px;
+    position: absolute;
+    content: "";
+    width: 50px;
+    top: 50%;
+    right: -30px;
+  }
+}

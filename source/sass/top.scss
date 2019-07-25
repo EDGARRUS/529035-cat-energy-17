@@ -1,0 +1,36 @@
+.top {
+  background-color: $color_empty;
+  padding: 15px 0;
+  border-bottom: 1px solid $grey_light;
+}
+
+.top__wrapper {
+  width: $wrapper_mobile;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-header {
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  width: 191px;
+  height: 38px;
+  display: block;
+}
+
+.menu-toggle--close ~ .main-nav {
+  display: none;
+}
+
+.menu-toggle {
+  all: unset;
+  background-image: url("../img/mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  width: 24px;
+  height: 18px;
+}

@@ -1,0 +1,47 @@
+.extra__wrapper {
+  width: $wrapper_mobile;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.additional {
+  @include ul_reset;
+  margin-bottom: 0;
+}
+
+.additional__item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid $grey_light;
+}
+
+.additional__item:nth-child(1) {
+  border-top: 1px solid $grey_light;
+}
+
+.additional__title {
+  font-size: 16px;
+  font-family: $font_promo;
+  color: $black;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+}
+
+.additional__info {
+  font-size: 14px;
+  font-family: $font_standard;
+  color: $grey_dark;
+  line-height: 1;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.additional__size {
+  text-align: left;
+
+}
+
+.additional__price {
+  text-align: right;
+}
