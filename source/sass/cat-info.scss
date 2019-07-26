@@ -1,0 +1,33 @@
+.cat-info {
+  all: unset;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $grey_light;
+  width: 100%;
+}
+
+.cat-info__label {
+  font-size: 16px;
+  font-family: $font_promo;
+  color: $black;
+  text-transform: uppercase;
+  line-height: 1.125;
+  text-align: left;
+  white-space: nowrap;
+  margin-right: 15px;
+}
+
+.cat-info__input-text {
+  padding: 15px;
+  flex-grow: 1;
+  width: 100%;
+  border: 1px solid $grey_light;
+}
+
+.cat-info__input-text[placeholder] {
+  font-size: 16px;
+  font-family: $font_promo;
+  color: $grey_dark;
+  text-transform: uppercase;
+  line-height: 1.125;
+  text-align: left;
+}

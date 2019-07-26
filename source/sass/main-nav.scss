@@ -1,0 +1,11 @@
+.main-nav {
+  width: 100%;
+  margin-top: 15px
+}
+
+.main-nav__list {
+  @include ul_reset;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}

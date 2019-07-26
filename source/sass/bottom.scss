@@ -27,35 +27,7 @@
   padding-bottom: 20px;
 }
 
-.social__list {
-  @include ul_reset;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social__item {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .bottom__copyright {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.copyright {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.copyright__description {
-  font-size: 16px;
-  font-family: $font_standard;
-  color: $grey_dark;
-  line-height: 1;
-  text-align: left;
-  text-decoration: none;
 }
