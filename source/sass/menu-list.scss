@@ -1,0 +1,21 @@
+.menu-list__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid $grey_light;
+}
+
+.menu-list__item:last-child {
+  padding-bottom: 10px;
+}
+
+.menu-list__link {
+  display: block;
+  font-size: 20px;
+  font-family: $font_promo;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}

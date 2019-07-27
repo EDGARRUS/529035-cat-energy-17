@@ -1,0 +1,60 @@
+.buyer {
+  all: unset;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $grey_light;
+  width: 100%;
+}
+
+.buyer__label {
+  font-size: 16px;
+  font-family: $font_promo;
+  color: $black;
+  text-transform: uppercase;
+  line-height: 1.125;
+  text-align: left;
+  white-space: nowrap;
+  margin-right: 15px;
+}
+
+.buyer__input-text {
+  padding: 15px;
+  flex-grow: 1;
+  width: 100%;
+  border: 1px solid $grey_light;
+}
+
+.buyer__input-text[placeholder] {
+  font-size: 16px;
+  font-family: $font_promo;
+  color: $grey_dark;
+  text-transform: uppercase;
+  line-height: 1.125;
+  text-align: left;
+}
+
+.buyer__icon {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--email::after {
+    background-image: url("../img/icon-mail.svg");
+    width: 17px;
+    height: 13px;
+  }
+
+  &--phone::after {
+    background-image: url("../img/icon-phone.svg");
+    width: 20px;
+    height: 20px;
+  }
+}

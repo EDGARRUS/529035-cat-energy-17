@@ -1,0 +1,19 @@
+.title-divider {
+  font-size: 24px;
+  font-family: $font_promo;
+  color: $black;
+  line-height: 1;
+  text-align: left;
+  position: relative;
+  font-weight: normal;
+
+  &::after {
+    background-color: $green_light;
+    height: 3px;
+    position: absolute;
+    content: "";
+    width: 250px;
+    top: 50%;
+    margin-left: 25px;
+  }
+}

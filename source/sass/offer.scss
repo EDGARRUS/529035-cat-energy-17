@@ -1,0 +1,41 @@
+.offer {
+  background-color: $color_empty;
+  margin-bottom: 20px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 305px;
+  padding-top: 30px;
+}
+
+.offer__wrapper {
+  width: $wrapper_mobile;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer__title {
+  font-size: 36px;
+  font-family: $font_promo;
+  color: $color_empty;
+  line-height: 1;
+  text-align: center;
+  font-weight: normal;
+}
+
+.offer__text {
+  font-size: 14px;
+  font-family: $font_promo;
+  color: $color_empty;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+.offer__product {
+  position: absolute;
+}
+
+.offer__link {
+  margin-top: 300px;
+}

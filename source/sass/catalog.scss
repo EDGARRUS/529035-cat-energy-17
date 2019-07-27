@@ -1,0 +1,9 @@
+.catalog__wrapper {
+  width: $wrapper_mobile;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.catalog__list {
+  @include ul_reset;
+}

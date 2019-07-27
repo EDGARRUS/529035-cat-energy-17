@@ -1,0 +1,104 @@
+.advantage {
+  background-color: $color_empty;
+}
+
+.advantage__wrapper {
+  width: $wrapper-mobile;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantage__item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: $grey_light;
+}
+
+.advantage__header {
+  display: flex;
+  align-items: center;
+}
+
+.advantage__title {
+  padding-left: 20px;
+  position: relative;
+  font-size: 24px;
+  font-family: $font_promo, $font_standard, sans-serif;
+  color: $black;
+  text-transform: uppercase;
+  line-height: 1.542;
+  text-align: left;
+}
+
+.advantage__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $green_light;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--slim::before {
+    background-image: url("../img/icon-cat-slim.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-position-x: center;
+    transform: translate(-50%, -50%);
+  }
+
+  &--pro::before {
+    background-image: url("../img/icon-cat-pro.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    width: 67px;
+    height: 50px;
+    background-position-x: center;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.advantage__text {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-family: $font_standard;
+  color: $grey_dark;
+  line-height: 1.286;
+  text-align: left;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.advantage__link {
+  position: relative;
+  font-size: 16px;
+  font-family: $font_promo;
+  color: $black;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 24px;
+    height: 100%;
+    content: "";
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+}

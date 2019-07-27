@@ -1,0 +1,14 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__description {
+  font-size: 16px;
+  font-family: $font_standard;
+  color: $grey_dark;
+  line-height: 1;
+  text-align: left;
+  text-decoration: none;
+}

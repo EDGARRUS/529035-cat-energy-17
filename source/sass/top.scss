@@ -1,0 +1,41 @@
+.top {
+  background-color: $color_empty;
+  padding: 15px 0;
+  border-bottom: 1px solid $grey_light;
+}
+
+.top__wrapper {
+  width: $wrapper_mobile;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top__menu-toggle {
+  all: unset;
+  background-image: url("../img/mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  width: 24px;
+  height: 18px;
+
+  &--opened {
+    background-image: url("../img/m-close.svg");
+  }
+}
+
+.top__menu-toggle--closed ~ .main-nav {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,18 @@
+.btn {
+  all: unset;
+  background-color: $green_light;
+  font-size: 14px;
+  font-family: $font_promo;
+  color: $color_empty;
+  text-transform: uppercase;
+  line-height: 1.286;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+
+  &--grey {
+    background-color: $grey_light;
+    color: $grey_dark;
+  }
+}
