@@ -39,3 +39,63 @@
 .additional__price {
   text-align: right;
 }
+
+@media (min-width: 768px) {
+  .additional__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid $grey_light;
+    padding: 30px 40px;
+  }
+
+  .additional__title {
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 0;
+  }
+
+  .additional__info {
+    font-size: 16px;
+    line-height: 1.25;
+    width: auto;
+  }
+
+  .additional__btn {
+    width: 100%;
+  }
+
+  .additional__size {
+    padding-right: 52px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional {
+    width: 895px;
+  }
+
+  .additional__item {
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+  }
+
+  .additional__btn {
+    width: 245px;
+  }
+
+  .additional__title {
+    margin-bottom: 0;
+    width: 245px;
+  }
+
+  .additional__info {
+    margin-bottom: 0;
+    width: 245px;
+  }
+}

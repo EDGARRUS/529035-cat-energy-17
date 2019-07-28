@@ -31,3 +31,33 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+@media (min-width: 768px) {
+  .bottom__wrapper {
+    width: $wrapper_tablet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom__description {
+    width: 132px;
+    margin-bottom: 0;
+  }
+
+  .bottom__social {
+    all: unset;
+  }
+
+  .bottom__copyright {
+    all: unset;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bottom__wrapper {
+    width: $wrapper_desktop;
+    padding-bottom: 62px;
+    padding-top: 62px;
+  }
+}
