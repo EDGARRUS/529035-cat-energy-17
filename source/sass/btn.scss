@@ -16,3 +16,10 @@
     color: $grey_dark;
   }
 }
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+}

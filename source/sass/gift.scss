@@ -9,8 +9,6 @@
   background-position: center;
   height: 289px;
   width: $wrapper_mobile;
-  margin-left: auto;
-  margin-right: auto;
   background-size: cover;
 }
 
@@ -23,7 +21,6 @@
   position: relative;
   padding-left: 50px;
   padding-right: 50px;
-  position: relative;
   padding-top: 200px;
 
   &::before {
@@ -37,5 +34,43 @@
     left: 50%;
     transform: translateX(-50%);
     top: 75px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gift__wrapper {
+    width: $wrapper_tablet;
+    height: auto;
+  }
+
+  .gift__text {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 435px;
+    padding-right: 95px;
+    text-align: left;
+
+    &::before {
+      left: 20%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .gift__wrapper {
+    width: 245px;
+    min-height: 289px;
+  }
+
+  .gift__text {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 190px;
+    padding-bottom: 0;
+
+    &::before {
+      left: 50%;
+    }
   }
 }

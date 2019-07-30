@@ -39,3 +39,31 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media (min-width: 768px) {
+  .top {
+    width: $wrapper_tablet;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  .top__wrapper {
+    width: unset;
+  }
+
+  .top__menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .top {
+    width: $wrapper_desktop;
+    position: relative;
+    z-index: 100;
+    background-color: unset;
+  }
+}

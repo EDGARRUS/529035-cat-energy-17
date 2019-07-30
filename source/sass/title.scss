@@ -8,3 +8,10 @@
   margin-bottom: 35px;
   font-weight: normal;
 }
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 60px;
+    line-height: 1;
+  }
+}

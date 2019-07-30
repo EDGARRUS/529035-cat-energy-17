@@ -1,5 +1,30 @@
+.extra {
+  padding-bottom: 20px;
+}
+
 .extra__wrapper {
   width: $wrapper_mobile;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .extra__wrapper {
+    width: $wrapper_tablet;
+  }
+}
+
+@media (min-width: 1440px) {
+  .extra__wrapper {
+    width: $wrapper_desktop;
+  }
+
+  .extra {
+    padding-bottom: 80px;
+  }
+
+  .extra__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }

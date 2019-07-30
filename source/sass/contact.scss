@@ -41,3 +41,22 @@
   width: 100%;
   height: 362px;
 }
+
+@media (min-width: 768px) {
+  .contact__wrapper {
+    width: $wrapper_tablet;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .contact__title {
+    margin-right: 280px;
+    font-size: 20px;
+  }
+
+  .contact__text {
+    text-align: right;
+    font-size: 16px;
+  }
+}
