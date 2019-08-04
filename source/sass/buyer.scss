@@ -1,7 +1,6 @@
 .buyer {
   all: unset;
   padding-bottom: 15px;
-  border-bottom: 1px solid $grey_light;
   width: 100%;
 }
 
@@ -21,6 +20,7 @@
   flex-grow: 1;
   width: 100%;
   border: 1px solid $grey_light;
+  box-sizing: border-box;
 }
 
 .buyer__input-text[placeholder] {
@@ -39,7 +39,7 @@
   &::after {
     position: absolute;
     content: "";
-    right: 0;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     background-repeat: no-repeat;
@@ -56,5 +56,35 @@
     background-image: url("../img/icon-phone.svg");
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .buyer {
+    margin-bottom: 30px;
+  }
+
+  .buyer__label {
+    font-size: 20px;
+  }
+
+  .buyer__input-text[placeholder] {
+    font-size: 20px;
+  }
+
+  .buyer__icon::after {
+    right: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .buyer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buyer .choice__input-wrapper {
+    width: 570px;
   }
 }

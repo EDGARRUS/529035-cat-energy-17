@@ -9,4 +9,26 @@
 .social__item {
   margin-left: 20px;
   margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .social__item--vk svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__item--inst svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__item--fb svg {
+    width: 14px;
+    height: 28px;
+  }
 }

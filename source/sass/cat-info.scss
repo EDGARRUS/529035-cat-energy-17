@@ -3,6 +3,7 @@
   padding-bottom: 15px;
   border-bottom: 1px solid $grey_light;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .cat-info__label {
@@ -19,7 +20,7 @@
 .cat-info__input-text {
   padding: 15px;
   flex-grow: 1;
-  width: 100%;
+  width: 1px;
   border: 1px solid $grey_light;
 }
 
@@ -30,4 +31,31 @@
   text-transform: uppercase;
   line-height: 1.125;
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .cat-info {
+    box-sizing: border-box;
+    border-bottom: none;
+    margin-bottom: 35px;
+  }
+
+  .cat-info__label {
+    font-size: 20px;
+  }
+
+  .cat-info__input-text[placeholder] {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cat-info {
+    width: 570px;
+    flex: 0 0 auto;
+  }
+
+  .cat-info__label {
+    margin-right: 18px;
+  }
 }

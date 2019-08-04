@@ -30,8 +30,8 @@
   .menu-list__item {
     border-top: none;
     padding-bottom: 10px;
-    padding-top: 10px;
-    margin-left: 15px;
+    padding-top: 15px;
+    margin-left: 20px;
     margin-right: 15px;
 
     &:last-child {
@@ -52,5 +52,9 @@
 
   .main-nav__list--index .menu-list__link {
     color: white;
+  }
+
+  .menu-list__item {
+    padding-bottom: 0px;
   }
 }

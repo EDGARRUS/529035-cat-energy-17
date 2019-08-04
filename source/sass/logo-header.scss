@@ -6,3 +6,19 @@
   height: 38px;
   display: block;
 }
+
+@media (min-width: 768px) {
+  .logo-header {
+    background-image: url("../img/logo-tablet.svg");
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo-header {
+    background-image: url("../img/logo-desktop.svg");
+    width: 202px;
+    height: 59px;
+  }
+}

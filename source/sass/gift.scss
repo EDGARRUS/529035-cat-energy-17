@@ -10,6 +10,7 @@
   height: 289px;
   width: $wrapper_mobile;
   background-size: cover;
+  margin-top: 40px;
 }
 
 .gift__text {
@@ -21,7 +22,7 @@
   position: relative;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 200px;
+  padding-top: 190px;
 
   &::before {
     background-image: url("../img/icon-gift.svg");
@@ -33,7 +34,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 75px;
+    top: 65px;
   }
 }
 
@@ -41,17 +42,19 @@
   .gift__wrapper {
     width: $wrapper_tablet;
     height: auto;
+    margin-top: 74px;
+    margin-bottom: 38px;
   }
 
   .gift__text {
     padding-top: 70px;
     padding-bottom: 70px;
-    padding-left: 435px;
+    padding-left: 425px;
     padding-right: 95px;
     text-align: left;
 
     &::before {
-      left: 20%;
+      left: 17%;
     }
   }
 }
@@ -60,17 +63,19 @@
   .gift__wrapper {
     width: 245px;
     min-height: 289px;
+    margin-top: 18px;
   }
 
   .gift__text {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 190px;
+    padding-top: 170px;
     padding-bottom: 0;
 
     &::before {
       left: 50%;
+      top: 50px;
     }
   }
 }

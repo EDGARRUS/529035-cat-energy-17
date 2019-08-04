@@ -4,6 +4,7 @@
   width: 125px;
   padding-top: 12px;
   padding-bottom: 12px;
+  box-sizing: border-box;
 }
 
 .stat__number {
@@ -37,4 +38,43 @@
   margin-top: 35px;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .stat__number {
+    font-size: 30px;
+  }
+
+  .stat__description {
+    font-size: 14px;
+    background-color: $color_empty;
+    bottom: -6px;
+    white-space: nowrap;
+    padding: 0 5px;
+  }
+
+  .stat__cost {
+    font-size: 20px;
+    width: 182px;
+    text-align: right;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .stat__wrapper {
+    width: 162px;
+    margin-right: 42px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .stat__cost {
+    width: 100%;
+    text-align: left;
+    margin-top: 58px;
+  }
+
+  .stat__description {
+    background-color: $grey_light;
+  }
 }

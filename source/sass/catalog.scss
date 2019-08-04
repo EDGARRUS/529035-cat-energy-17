@@ -2,11 +2,12 @@
   width: $wrapper_mobile;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .catalog__list {
   @include ul_reset;
-  margin-bottom: 0;
+  margin-bottom: 26px;
 }
 
 @media (min-width: 768px) {
@@ -21,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 170px;
   }
 }
 

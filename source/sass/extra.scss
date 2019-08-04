@@ -1,5 +1,6 @@
 .extra {
   padding-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .extra__wrapper {
@@ -12,6 +13,10 @@
   .extra__wrapper {
     width: $wrapper_tablet;
   }
+
+  .extra__title {
+    margin-bottom: 80px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -20,11 +25,15 @@
   }
 
   .extra {
-    padding-bottom: 80px;
+    padding-bottom: 26px;
   }
 
   .extra__list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .extra__title {
+    margin-bottom: 64px;
   }
 }
