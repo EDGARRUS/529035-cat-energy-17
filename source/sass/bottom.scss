@@ -6,7 +6,7 @@
   width: $wrapper-mobile;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
+  padding-top: 36px;
   padding-bottom: 20px;
 }
 
@@ -24,11 +24,11 @@
   border-top: 1px solid $grey_dark;
   border-bottom: 1px solid $grey_dark;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .bottom__copyright {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 20px;
 }
 
@@ -38,6 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 56px;
   }
 
   .bottom__description {
@@ -47,6 +48,7 @@
 
   .bottom__social {
     all: unset;
+    margin-left: 25px;
   }
 
   .bottom__copyright {
@@ -58,6 +60,10 @@
   .bottom__wrapper {
     width: $wrapper_desktop;
     padding-bottom: 62px;
-    padding-top: 62px;
+    padding-top: 58px;
+  }
+
+  .bottom__social {
+    margin-left: 28px;
   }
 }

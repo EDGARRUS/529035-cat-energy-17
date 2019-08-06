@@ -9,7 +9,8 @@
 }
 
 .about__title {
-  margin-bottom: 35px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-family: $font_promo;
   color: $black;
@@ -26,7 +27,7 @@
 
 .about__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   padding-left: 80px;
   font-size: 14px;
   font-family: $font_standard;
@@ -65,6 +66,15 @@
 }
 
 @media (min-width: 768px) {
+  .about {
+    border-bottom: 1px solid $grey_light;
+  }
+
+  .about__list li:nth-last-child(1),
+  .about__list li:nth-last-child(2) {
+    margin-bottom: 64px;
+  }
+
   .about__wrapper {
     width: $wrapper-tablet;
   }
@@ -72,6 +82,7 @@
   .about__title {
     font-size: 60px;
     line-height: 1;
+    margin-bottom: 74px;
   }
 
   .about__list {
@@ -81,11 +92,11 @@
   }
 
   .about__item {
-    width: 50%;
+    width: 46%;
     padding-left: 0;
-    margin-bottom: 80px;
-    padding-right: 120px;
-    padding-top: 120px;
+    margin-bottom: 134px;
+    padding-right: 100px;
+    padding-top: 110px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 1.5;
@@ -102,7 +113,7 @@
       position: absolute;
       font-size: 280px;
       color: #f2f2f2;
-      right: 100px;
+      right: 86px;
       top: -35px;
       line-height: 1;
       z-index: -10;
@@ -128,21 +139,29 @@
 }
 
 @media (min-width: 1440px) {
+
+  .about {
+    border-bottom: none;
+  }
   .about__wrapper {
     width: $wrapper-desktop;
   }
 
   .about__item {
-    width: 235px;
+    width: 245px;
     padding-right: 0;
 
     &::after {
-      right: -10px;
+      right: 5px;
     }
   }
 
   .about__title {
-    margin-bottom: 60px;
+    margin-bottom: 74px;
+  }
+
+  .about__list {
+    margin-bottom: 0;
   }
 }
 

@@ -6,6 +6,8 @@
   text-align: left;
   position: relative;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 35px;
 
   &::after {
     background-color: $green_light;
@@ -24,11 +26,30 @@
     line-height: 1;
     padding: 0 40px;
   }
+
+  .title-divider--comment {
+    padding: 0;
+    margin-bottom: 74px;
+  }
+
+  .title-divider--data {
+    padding: 0;
+    margin-bottom: 74px;
+  }
+
+  .title-divider--add {
+    padding: 0;
+    margin-bottom: 54px;
+  }
 }
 
 @media (min-width: 1440px) {
   .title-divider {
     font-size: 36px;
-    padding: 0px;
+    padding: 0;
+  }
+
+  .title-divider--add {
+    margin-bottom: 60px;
   }
 }

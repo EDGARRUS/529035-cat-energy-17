@@ -1,6 +1,6 @@
 .offer {
   background-color: $color_empty;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
     height: 271px;
     background-size: contain;
     z-index: -10;
-    top: 130px;
+    top: 140px;
     left: 0;
   }
 }
@@ -36,6 +36,8 @@
   line-height: 1;
   text-align: center;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .offer__text {
@@ -53,12 +55,13 @@
 
 .offer__link {
   margin-top: 300px;
+  height: 40px;
 }
-
 @media (min-width: 768px) {
-
   .offer {
     background-image: none;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 
   .offer__wrapper {
@@ -90,7 +93,7 @@
     text-align: left;
     color: $black;
     margin-top: 0;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .offer__text {
@@ -104,6 +107,7 @@
     font-size: 20px;
     width: 245px;
     margin-top: 50px;
+    height: 52px;
   }
 }
 
@@ -114,7 +118,7 @@
     background-position: right;
     background-repeat: no-repeat;
     min-height: 696px;
-    margin-top: -170px;
+    margin-top: -186px;
     margin-bottom: 80px;
   }
 
@@ -128,9 +132,9 @@
     &::after {
       background-image: url("../img/index-can-desktop@1x.png");
       width: 552px;
-      height: 449px;
+      height: 499px;
       top: 150px;
-      left: 470px;
+      left: 450px;
     }
   }
 }

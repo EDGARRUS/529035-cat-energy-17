@@ -11,14 +11,14 @@
     <header class="top">
       <div class="top__wrapper">
         <a class="logo-header"></a>
-        <button class="top__menu-toggle top__menu-toggle--opened"></button>
+        <button class="top__menu-toggle top__menu-toggle--closed"></button>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item"><a class="menu-list__link" href="index.html">Главная</a></li>
             <li class="menu-list__item"><a class="menu-list__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="menu-list__item"><a class="menu-list__link menu-list__link--active">Подбор программы</a></li>
+            <li class="menu-list__item menu-list__item--active"><a class="menu-list__link">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -32,46 +32,49 @@
           <form class="choice__form">
 
             <!-- Первый блок вопросов -->
-            <fieldset class="cat-info">
-              <div class="choice__input-wrapper"><label class="cat-info__label" for="name">Имя:*</label><input
-                class="cat-info__input-text" id="name"
-                placeholder="Барсик"
-                required type="text"></div>
-              <div class="choice__input-wrapper"><label class="cat-info__label" for="weight">Вес (кг):*</label><input
-                class="cat-info__input-text"
-                id="weight"
-                placeholder="7"
-                required type="text"></div>
-              <div class="choice__input-wrapper"><label class="cat-info__label" for="age">Возраст (лет):*</label><input
-                class="cat-info__input-text"
-                id="age"
-                placeholder="7"
-                required type="text"></div>
-            </fieldset>
+            <div class="choice__fieldset-wrapper">
+              <fieldset class="cat-info">
+                <div class="choice__input-wrapper"><label class="cat-info__label" for="name">Имя:*</label><input
+                  class="cat-info__input-text" id="name"
+                  placeholder="Барсик"
+                  required type="text"></div>
+                <div class="choice__input-wrapper"><label class="cat-info__label" for="weight">Вес (кг):*</label><input
+                  class="cat-info__input-text"
+                  id="weight"
+                  placeholder="7"
+                  required type="text"></div>
+                <div class="choice__input-wrapper"><label class="cat-info__label" for="age">Возраст (лет):*</label><input
+                  class="cat-info__input-text"
+                  id="age"
+                  placeholder="7"
+                  required type="text"></div>
+              </fieldset>
 
-            <!-- Второй блок вопросов -->
-            <fieldset class="goals">
-              <div class="choice__radio-wrapper"><input checked class="goals__item visuallyhidden" id="less" name="goal"
-                                                type="radio"
-                                                value="Похудение"><label
-                class="goals__label" for="less">
-                <div class="goals__radio goals__radio--circle"></div>
-                Похудение</label></div>
-              <div class="choice__radio-wrapper"><input class="goals__item visuallyhidden" id="more" name="goal"
-                                                type="radio"
-                                                value="Набор массы"><label
-                class="goals__label" for="more">
-                <div class="goals__radio goals__radio--circle"></div>
-                Набор массы</label></div>
-              <div class="choice__radio-wrapper"><input class="goals__item visuallyhidden" id="hint" name="goal"
-                                                type="radio" value="Не знаю"><label
-                class="goals__label" for="hint">
-                <div class="goals__radio goals__radio--circle"></div>
-                Не знаю (нужен ваш совет)</label></div>
-            </fieldset>
+              <!-- Второй блок вопросов -->
+              <fieldset class="goals goals--round">
+                <div class="goals__radio-wrapper"><input checked class="goals__item visuallyhidden" id="less"
+                                                         name="goal"
+                                                         type="radio"
+                                                         value="Похудение"><label
+                  class="goals__label" for="less">
+                  <div class="goals__radio goals__radio--circle"></div>
+                  Похудение</label></div>
+                <div class="goals__radio-wrapper"><input class="goals__item visuallyhidden" id="more" name="goal"
+                                                         type="radio"
+                                                         value="Набор массы"><label
+                  class="goals__label" for="more">
+                  <div class="goals__radio goals__radio--circle"></div>
+                  Набор массы</label></div>
+                <div class="goals__radio-wrapper"><input class="goals__item visuallyhidden" id="hint" name="goal"
+                                                         type="radio" value="Не знаю"><label
+                  class="goals__label" for="hint">
+                  <div class="goals__radio goals__radio--circle"></div>
+                  Не знаю (нужен ваш совет)</label></div>
+              </fieldset>
+            </div>
 
             <!-- Третий блок вопросов -->
-            <h2 class="title-divider">Контактные данные (владельца кота)</h2>
+            <h2 class="title-divider title-divider--data">Контактные данные (владельца кота)</h2>
             <fieldset class="choice__buyer buyer">
               <div class="choice__input-wrapper"><label class="buyer__label" for="email">E-mail:*</label>
                 <div class="buyer__icon buyer__icon--email"><input
@@ -88,12 +91,12 @@
             </fieldset>
 
             <!-- Четвертный блок вопросов -->
-            <h2 class="title-divider">Комментарий</h2>
+            <h2 class="title-divider title-divider--comment">Комментарий</h2>
             <textarea class="choice__message" cols="35" placeholder="Расскажите обо всех повадках кота"
                       rows="10"></textarea>
 
-            <h2 class="title-divider">Дополнительно</h2>
-            <fieldset class="goals">
+            <h2 class="title-divider title-divider--add">Дополнительно</h2>
+            <fieldset class="goals goals--square">
               <div class="choice__radio-wrapper"><input checked class="goals__item visuallyhidden" id="sugar"
                                                         name="sugar"
                                                         type="checkbox"
@@ -122,8 +125,10 @@
             </fieldset>
 
             <!-- Подвал формы -->
-            <button class="btn choice__btn" type="submit">Отправить заявку</button>
-            <p class="choice__necessary">* — Обязательные поля</p>
+            <div class="choice__submit">
+              <button class="btn choice__btn" type="submit">Отправить заявку</button>
+              <p class="choice__necessary">* — Обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>
@@ -131,7 +136,7 @@
       <section class="contact contact--grey">
         <div class="contact__wrapper">
           <p class="contact__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contact__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <div class="contact__map"></div>
       </section>
@@ -143,7 +148,7 @@
         <a class="bottom__description"></a>
         <div class="bottom__social social">
           <ul class="social__list">
-            <li class="social__item"><a href="#">
+            <li class="social__item social__item--vk"><a href="#">
               <svg height="12px" id="Layer_1" style="enable-background:new 0 0 22 12;" version="1.1" viewBox="0 0 22 12"
                    width="22px" x="0px" xml:space="preserve"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
@@ -162,7 +167,7 @@
 	c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z"/>
 </svg>
             </a></li>
-            <li class="social__item"><a href="#">
+            <li class="social__item social__item--inst"><a href="#">
               <svg height="16px" id="Layer_1" style="enable-background:new 0 0 16.1 16;" version="1.1"
                    viewBox="0 0 16.1 16" width="16px" x="0px" xml:space="preserve"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
@@ -178,7 +183,7 @@
                 <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
 </svg>
             </a></li>
-            <li class="social__item"><a href="#">
+            <li class="social__item social__item--fb"><a href="#">
               <svg height="19px" id="Layer_1" style="enable-background:new 0 0 10 19;" version="1.1" viewBox="0 0 10 19"
                    width="10px" x="0px" xml:space="preserve"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
@@ -192,11 +197,14 @@
         <div class="bottom__copyright copyright">
           <a class="copyright__description" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__logo" href="#">
-            <svg height="34px" viewBox="0 0 60 60" width="27px" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
-                fill="#666666"/>
-            </svg>
+            <svg width="27" height="34" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 39.4 50" enable-background="new 0 0 39.4 50" xml:space="preserve">
+<path fill="#666666" d="M19.9,0h-0.2L0,2.1v36.2L19.7,50l19.7-11.7V2.1L19.9,0z M36.9,36.8L19.7,47L2.5,36.8V22l17.1,10.2V34L7.9,27
+	v1.8l11.8,7.1v1.9l-11.8-7v1.8l11.8,7l11.9-7.1v-7.6l5.3-3.2C36.9,21.7,36.9,36.8,36.9,36.8z M36.8,19.8l-4.7,2.8l-2.2,1.3
+	l-10.3-6.1v1.8l8.8,5.3h-0.1L28.1,25l-1.3,0.7l-7.3-4.3v1.8l5.8,3.4l-1.4,0.9l-4.3-2.6v1.8l2.9,1.7l-2.9,1.7L2.6,20l17-10.2
+	C19.6,9.8,36.8,19.8,36.8,19.8z M36.9,18L19.6,7.8L2.5,18V4.4l17.2-1.8l17.2,1.8V18z"/>
+</svg>
           </a>
         </div>
       </div>

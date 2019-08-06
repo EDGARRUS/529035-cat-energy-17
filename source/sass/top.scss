@@ -1,6 +1,6 @@
 .top {
   background-color: $color_empty;
-  padding: 15px 0;
+  padding: 12px 0;
   border-bottom: 1px solid $grey_light;
 }
 
@@ -48,6 +48,8 @@
     display: flex;
     justify-content: space-between;
     border-bottom: none;
+    padding-top: 25px;
+    margin-bottom: 45px;
   }
 
   .top__wrapper {
@@ -65,5 +67,7 @@
     position: relative;
     z-index: 100;
     background-color: unset;
+    padding-top: 52px;
+    margin-bottom: 60px;
   }
 }

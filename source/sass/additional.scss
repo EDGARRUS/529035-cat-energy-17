@@ -4,7 +4,7 @@
 }
 
 .additional__item {
-  padding-bottom: 25px;
+  padding-bottom: 16px;
   border-bottom: 1px solid $grey_light;
 }
 
@@ -19,6 +19,8 @@
   text-transform: uppercase;
   line-height: 1;
   text-align: left;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .additional__info {
@@ -40,13 +42,17 @@
   text-align: right;
 }
 
+.additional__btn {
+  height: 40px;
+}
+
 @media (min-width: 768px) {
   .additional__item {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid $grey_light;
-    padding: 30px 40px;
+    padding: 26px 36px;
   }
 
   .additional__title {
@@ -90,12 +96,13 @@
   }
 
   .additional__title {
-    margin-bottom: 0;
     width: 245px;
+    margin-bottom: 0;
   }
 
   .additional__info {
     margin-bottom: 0;
-    width: 245px;
+    width: 285px;
+    margin-left: 40px;
   }
 }
