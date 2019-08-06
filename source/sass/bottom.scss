@@ -23,8 +23,8 @@
 .bottom__social {
   border-top: 1px solid $grey_dark;
   border-bottom: 1px solid $grey_dark;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .bottom__copyright {
@@ -48,6 +48,7 @@
 
   .bottom__social {
     all: unset;
+    margin-left: 25px;
   }
 
   .bottom__copyright {
@@ -60,5 +61,9 @@
     width: $wrapper_desktop;
     padding-bottom: 62px;
     padding-top: 58px;
+  }
+
+  .bottom__social {
+    margin-left: 28px;
   }
 }
