@@ -65,6 +65,30 @@
   }
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .about__item {
+    &::before {
+      background-size: 50px 50px;
+    }
+
+    &--function::before {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+
+    &--type::before {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+
+    &--change::before {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+
+    &--time::before {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .about {
     border-bottom: 1px solid $grey_light;
@@ -139,10 +163,10 @@
 }
 
 @media (min-width: 1440px) {
-
   .about {
     border-bottom: none;
   }
+
   .about__wrapper {
     width: $wrapper-desktop;
   }
