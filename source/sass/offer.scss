@@ -29,6 +29,12 @@
   }
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .offer__wrapper::after {
+    background-image: url("../img/index-can-mobile@2x.png");
+  }
+}
+
 .offer__title {
   font-size: 36px;
   font-family: $font_promo;
@@ -57,6 +63,7 @@
   margin-top: 300px;
   height: 40px;
 }
+
 @media (min-width: 768px) {
   .offer {
     background-image: none;
@@ -84,6 +91,12 @@
       z-index: -10;
       top: 200px;
       left: 0;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .offer__wrapper::after {
+      background-image: url("../img/index-can-tablet@2x.jpg");
     }
   }
 
@@ -122,6 +135,13 @@
     margin-bottom: 80px;
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .offer {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 50% auto;
+    }
+  }
+
   .offer__wrapper {
     width: $wrapper_desktop;
     padding-left: 80px;
@@ -135,6 +155,12 @@
       height: 499px;
       top: 150px;
       left: 450px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .offer__wrapper::after {
+      background-image: url("../img/index-can-desktop@2x.png");
     }
   }
 }
