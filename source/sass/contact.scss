@@ -43,6 +43,10 @@
   height: 362px;
 }
 
+.contact__map iframe {
+  height: 362px;
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contact__map {
     background-image: url("../img/bg-map-mobile@2x.png");
@@ -79,6 +83,10 @@
     height: 396px;
   }
 
+  .contact__map iframe {
+    height: 396px;
+  }
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .contact__map {
       background-image: url("../img/bg-map-tablet@2x.png");
@@ -93,6 +101,10 @@
 
   .contact__map {
     background-image: url("../img/bg-map-desktop@1x.png");
+    height: 400px;
+  }
+
+  .contact__map iframe {
     height: 400px;
   }
 
@@ -112,6 +124,7 @@
     padding-left: 76px;
     padding-right: 76px;
     justify-content: space-between;
+    z-index: 500;
   }
 
   .contact__title {
