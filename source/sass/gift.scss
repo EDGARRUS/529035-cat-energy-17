@@ -48,7 +48,7 @@
   .gift__wrapper {
     width: $wrapper_tablet;
     height: auto;
-    margin-top: 74px;
+    margin-top: 66px;
     margin-bottom: 38px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
@@ -72,11 +72,11 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .gift__wrapper {
     width: 245px;
     min-height: 289px;
-    margin-top: 18px;
+    margin-top: 0;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 

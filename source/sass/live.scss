@@ -26,14 +26,19 @@
   .live {
     background-color: unset;
     padding-bottom: 0;
+    padding-top: 24px;
+    overflow-x: hidden;
   }
+
   .live__wrapper {
     width: 100%;
   }
+
   .live__title {
     font-size: 60px;
     margin-bottom: 46px;
   }
+
   .live__title-wrapper {
     width: $wrapper-tablet;
     margin-left: auto;
@@ -41,9 +46,10 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .live {
-    padding-top: 0;
+    padding-top: 36px;
+    margin-top: -40px;
   }
 
   .live__title {

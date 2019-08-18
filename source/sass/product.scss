@@ -1,5 +1,5 @@
 .product__item {
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   border: 1px solid $grey_light;
 }
 
@@ -126,7 +126,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .product__item {
     width: 245px;
     margin-bottom: 142px;

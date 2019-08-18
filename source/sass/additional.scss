@@ -1,6 +1,7 @@
 .additional {
   @include ul_reset;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .additional__item {
@@ -59,12 +60,14 @@
     font-size: 20px;
     line-height: 1;
     margin-top: 0;
+    margin-bottom: 24px;
   }
 
   .additional__info {
     font-size: 16px;
     line-height: 1.25;
     width: auto;
+    margin-bottom: 24px;
   }
 
   .additional__btn {
@@ -76,7 +79,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .additional {
     width: 895px;
   }

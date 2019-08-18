@@ -1,7 +1,10 @@
 .buyer {
   all: unset;
   padding-bottom: 15px;
-  width: 100%;
+  width: $wrapper_mobile;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .buyer__label {
@@ -16,11 +19,20 @@
 }
 
 .buyer__input-text {
-  padding: 15px;
+  padding: 14px;
   flex-grow: 1;
   width: 100%;
   border: 1px solid $grey_light;
   box-sizing: border-box;
+
+  &:active,
+  &:focus {
+    border: 1px solid $black;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
 }
 
 .buyer__input-text[placeholder] {
@@ -35,34 +47,38 @@
 .buyer__icon {
   position: relative;
   width: 100%;
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.buyer__email {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-  &--email::after {
-    background-image: url("../img/icon-mail.svg");
-    width: 17px;
-    height: 13px;
-  }
+.buyer__phone {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-  &--phone::after {
-    background-image: url("../img/icon-phone.svg");
-    width: 20px;
-    height: 20px;
-  }
+.buyer__input-text:active + .buyer__email,
+.buyer__input-text:active + .buyer__phone,
+.buyer__input-text:focus + .buyer__email,
+.buyer__input-text:focus + .buyer__phone {
+  fill: $green_light;
+}
+
+.buyer__input-text:invalid + .buyer__email,
+.buyer__input-text:invalid + .buyer__phone {
+  fill: #ff8282;
 }
 
 @media (min-width: 768px) {
-
   .buyer {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    width: 100%;
   }
 
   .buyer__label {
@@ -72,16 +88,13 @@
   .buyer__input-text[placeholder] {
     font-size: 20px;
   }
-
-  .buyer__icon::after {
-    right: 20px;
-  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .buyer {
     display: flex;
     justify-content: space-between;
+    width: $wrapper_desktop;
   }
 
   .buyer .choice__input-wrapper {

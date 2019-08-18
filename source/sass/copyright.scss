@@ -11,6 +11,23 @@
   line-height: 1;
   text-align: left;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  fill: #666666;
+
+  &:hover svg {
+    fill: $green_light;
+  }
+
+  &:active svg {
+    fill: $green_light;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {

@@ -94,9 +94,13 @@
   text-align: left;
   text-decoration: none;
 
+  &:active {
+    color: #11111130;
+  }
+
   &::after {
     position: absolute;
-    right: -36px;
+    left: 96px;
     top: 0;
     width: 24px;
     height: 100%;
@@ -105,6 +109,15 @@
     background-repeat: no-repeat;
     background-position-y: center;
   }
+}
+
+.advantage__link:hover::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  width: 33px;
+}
+
+.advantage__link:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -140,6 +153,10 @@
 
   .advantage__link {
     font-size: 20px;
+
+    &::after {
+      left: 130px;
+    }
   }
 
   .advantage__icon {
@@ -162,7 +179,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .advantage__wrapper {
     width: $wrapper-desktop;
     display: flex;
@@ -190,7 +207,7 @@
   }
 
   .advantage__link::after {
-    right: -46px;
+    left: 120px;
   }
 
   .advantage__icon {

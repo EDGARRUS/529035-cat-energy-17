@@ -12,6 +12,15 @@
   justify-content: center;
   width: 30px;
   height: 30px;
+
+  &:hover svg {
+    fill: $green_light;
+  }
+
+  &:active svg {
+    fill: $green_light;
+    opacity: 0.3;
+  }
 }
 
 .social__item:nth-child(2) {

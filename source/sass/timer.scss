@@ -6,6 +6,9 @@
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .timer__description {
@@ -15,8 +18,25 @@
   text-transform: uppercase;
 }
 
+.timer__btn {
+  width: 35px;
+  height: 6px;
+  display: block;
+  background-color: $color_empty;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input:checked + .timer__btn {
+  background-color: $green_light;
+}
+
 @media (min-width: 768px) {
   .timer__description {
     font-size: 20px;
+  }
+
+  .timer__bar {
+    display: none;
   }
 }

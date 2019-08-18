@@ -4,6 +4,14 @@
   border-top: 1px solid $grey_light;
 }
 
+.menu-list__link[href]:hover {
+  opacity: 0.6;
+}
+
+.menu-list__link[href]:active {
+  opacity: 0.3;
+}
+
 .menu-list__item:last-child {
   padding-bottom: 10px;
 }
@@ -44,7 +52,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .menu-list__link {
     font-size: 20px;
     line-height: 1.7;

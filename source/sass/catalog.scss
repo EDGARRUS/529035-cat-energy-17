@@ -1,3 +1,7 @@
+.catalog {
+  margin-bottom: 44px;
+}
+
 .catalog__wrapper {
   width: $wrapper_mobile;
   margin-left: auto;
@@ -26,7 +30,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .catalog__wrapper {
     width: $wrapper_desktop;
   }

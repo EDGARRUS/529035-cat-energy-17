@@ -1,9 +1,8 @@
 .cat-info {
   all: unset;
   padding-bottom: 15px;
-  border-bottom: 1px solid $grey_light;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .cat-info__label {
@@ -22,6 +21,14 @@
   flex-grow: 1;
   width: 1px;
   border: 1px solid $grey_light;
+
+  &:active, &:focus {
+    border: 1px solid $black;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
 }
 
 .cat-info__input-text[placeholder] {
@@ -49,7 +56,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .cat-info {
     width: 570px;
     flex: 0 0 auto;

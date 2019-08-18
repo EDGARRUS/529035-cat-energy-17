@@ -40,7 +40,7 @@
   color: $grey_dark;
   line-height: 1.333;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   margin-top: 0;
 }
 
@@ -92,7 +92,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .more {
     width: 245px;
   }

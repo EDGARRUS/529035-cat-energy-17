@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Форма</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div style="display: none;">
@@ -29,9 +34,10 @@
 
     <main class="page-content">
       <section class="choice">
-        <div class="choice__wrapper">
+        <div class="choice__wrapper choice__wrapper--title">
           <h1 class="title">Подбор программы</h1>
           <p class="choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
           <form class="choice__form">
 
             <!-- Первый блок вопросов -->
@@ -52,7 +58,7 @@
                   placeholder="7"
                   required type="text"></div>
               </fieldset>
-
+              <div class="choice__line"></div>
               <!-- Второй блок вопросов -->
               <fieldset class="goals goals--round">
                 <div class="goals__radio-wrapper"><input checked class="goals__item visuallyhidden" id="less"
@@ -74,31 +80,56 @@
                   <div class="goals__radio goals__radio--circle"></div>
                   Не знаю (нужен ваш совет)</label></div>
               </fieldset>
+              <div class="choice__line"></div>
             </div>
 
             <!-- Третий блок вопросов -->
-            <h2 class="title-divider title-divider--data">Контактные данные (владельца кота)</h2>
+            <div class="title-divider">
+              <div class="title-divider__line"></div>
+              <div class="title-divider__position"><h2 class="title-divider__text title-divider__text--data">Контактные
+                данные (владельца кота)</h2></div>
+            </div>
+            <div class="choice__wrapper">
             <fieldset class="choice__buyer buyer">
               <div class="choice__input-wrapper"><label class="buyer__label" for="email">E-mail:*</label>
-                <div class="buyer__icon buyer__icon--email"><input
+                <div class="buyer__icon"><input
                   class="buyer__input-text"
                   id="email"
-                  placeholder="kuklachev@gmail.com" required type="email"></div>
+                  placeholder="kuklachev@gmail.com" required type="email">
+                  <svg class="buyer__email" viewBox="0 0 17 13" width="17" height="13">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </div>
               </div>
               <div class="choice__input-wrapper"><label class="buyer__label" for="tel">Телефон:*</label>
-                <div class="buyer__icon buyer__icon--phone"><input
-                  class="buyer__input-text buyer__input-text--phone"
+                <div class="buyer__icon"><input
+                  class="buyer__input-text"
                   id="tel"
-                  placeholder="8 (960) 900-60-90" required type="tel"></div>
+                  placeholder="8 (960) 900-60-90" required type="tel">
+                  <svg class="buyer__email" viewBox="0 0 20 20" width="20" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </div>
               </div>
             </fieldset>
+            </div>
 
             <!-- Четвертный блок вопросов -->
-            <h2 class="title-divider title-divider--comment">Комментарий</h2>
-            <textarea class="choice__message" cols="35" placeholder="Расскажите обо всех повадках кота"
+            <div class="title-divider">
+              <div class="title-divider__line"></div>
+              <div class="title-divider__position"><h2 class="title-divider__text title-divider__text--comment">
+                Комментарий</h2></div>
+            </div>
+            <div class="choice__wrapper">
+              <textarea class="choice__message" cols="35" placeholder="Расскажите обо всех повадках кота"
                       rows="10"></textarea>
-
-            <h2 class="title-divider title-divider--add">Дополнительно</h2>
+            </div>
+            <div class="title-divider">
+              <div class="title-divider__line"></div>
+              <div class="title-divider__position"><h2 class="title-divider__text title-divider__text--add">
+                Дополнительно</h2></div>
+            </div>
+            <div class="choice__wrapper">
             <fieldset class="goals goals--square">
               <div class="choice__radio-wrapper"><input checked class="goals__item visuallyhidden" id="sugar"
                                                         name="sugar"
@@ -126,14 +157,15 @@
                 <div class="goals__radio goals__radio--square"></div>
                 Витамины</label></div>
             </fieldset>
-
+            </div>
             <!-- Подвал формы -->
-            <div class="choice__submit">
-              <button class="btn choice__btn" type="submit">Отправить заявку</button>
-              <p class="choice__necessary">* — Обязательные поля</p>
+            <div class="choice__wrapper">
+              <div class="choice__submit">
+                <button class="btn choice__btn" type="submit">Отправить заявку</button>
+                <p class="choice__necessary">* — Обязательные поля</p>
+              </div>
             </div>
           </form>
-        </div>
       </section>
 
       <section class="contact contact--grey">
@@ -141,7 +173,7 @@
           <p class="contact__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contact__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
-        <div class="contact__map"></div>
+        <div id="map" class="contact__map"></div>
       </section>
 
     </main>
@@ -191,6 +223,8 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=61e5cbc1-21bf-4eae-9d1e-cf5891aaac13"
+            type="text/javascript"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

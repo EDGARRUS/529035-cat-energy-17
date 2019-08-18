@@ -67,7 +67,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .stat__cost {
     width: 100%;
     text-align: left;
@@ -76,5 +76,9 @@
 
   .stat__description {
     background-color: $grey_light;
+  }
+
+  .stat__price {
+    margin-left: 60px;
   }
 }

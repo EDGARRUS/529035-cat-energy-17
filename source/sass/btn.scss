@@ -12,10 +12,28 @@
   padding: 12px;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #ffffff30;
+  }
+
   &--grey {
     background-color: $grey_light;
     color: $grey_dark;
   }
+}
+
+.btn--grey:hover {
+  background-color: #ebebeb;
+}
+
+.btn--grey:active {
+  background-color: #ebebeb;
+  color: #11111130;
 }
 
 @media (min-width: 768px) {

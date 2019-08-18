@@ -33,7 +33,11 @@
   width: 100%;
   box-sizing: border-box;
   height: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 46px;
+
+  &:active, &:focus {
+    border: 1px solid $black;
+  }
 }
 
 .choice__message[placeholder] {
@@ -56,17 +60,37 @@
   line-height: 1.143;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
+}
+
+.choice__fieldset-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: $wrapper_mobile;
+  margin-bottom: 46px;
+}
+
+.choice__line {
+  height: 1px;
+  width: 100vw;
+  background-color: #f2f2f2;
+  position: absolute;
+  left: 0;
 }
 
 @media (min-width: 768px) {
+  .choice__line {
+    display: none;
+  }
+
   .choice__wrapper {
     width: $wrapper_tablet;
+    padding-left: 40px;
+    padding-right: 35px;
+    box-sizing: border-box;
   }
 
   .choice__form {
-    padding-left: 40px;
-    padding-right: 35px;
     box-sizing: border-box;
     margin-bottom: 64px;
   }
@@ -112,7 +136,7 @@
 
   .choice__message {
     padding: 20px;
-    margin-bottom: 92px;
+    margin-bottom: 104px;
   }
 
   .choice__message[placeholder] {
@@ -124,13 +148,23 @@
   }
 
   .choice__fieldset-wrapper {
-    margin-bottom: 56px;
+    margin-bottom: 96px;
+    width: $wrapper_tablet;
+    padding-left: 40px;
+    box-sizing: border-box;
+    padding-right: 35px;
+  }
+
+  .choice__wrapper--title {
+    padding-left: 0;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .choice__wrapper {
     width: $wrapper_desktop;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .choice__text {
@@ -140,14 +174,17 @@
   .choice__form {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 78px;
+    margin-bottom: 72px;
   }
 
   .choice__fieldset-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 0;
+    margin-bottom: 18px;
+    padding-left: 0;
+    padding-right: 0;
+    width: $wrapper_desktop;
   }
 
   .goals--round .choice__radio-wrapper {
@@ -174,8 +211,7 @@
 
   .choice__message {
     height: 174px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+    padding-top: 10px;
   }
-
-
 }

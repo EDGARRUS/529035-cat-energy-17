@@ -1,14 +1,14 @@
 .goals {
   all: unset;
-  padding-top: 0px;
+  padding-top: 18px;
   padding-bottom: 10px;
-  border-bottom: 1px solid $grey_light;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 
 .goals--square {
   margin-bottom: 10px;
+  padding-top: 0;
 }
 
 .goals__label {
@@ -66,6 +66,14 @@
   margin-bottom: 10px;
 }
 
+.goals__item:active {
+  opacity: 0.3;
+}
+
+.goals__label:active {
+  opacity: 0.3;
+}
+
 @media (min-width: 768px) {
   .goals--round {
     border: 1px solid #f2f2f2;
@@ -82,6 +90,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     border-bottom: none;
+    margin-top: -20px;
   }
 
   .goals__radio-wrapper {
@@ -109,7 +118,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .goals--round {
     width: 570px;
     flex: 0 0 auto;
